@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+.header{
+            margin-top: 60px;
+        }
+        .form-control-dark.text-bg-dark::placeholder {
+            color: white;
+        }
+        
+        .form-control-dark.text-bg-dark::placeholder {
+            color: white;
+        }
+
+        .custom-image {
+            display: block;
+            margin: 80px auto; /* Center the image horizontally */
+            max-width: 50%; /* Set the maximum width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 130px;
+            padding-left: 50px;
+        }
+
+        #Description {
+            text-align: center;
+            margin-top: 20px;
+            padding-left: 170px;
+        }
+        .money-photo2{
+            margin: 80px auto; /* Center the image horizontally */
+            max-width: 50%; /* Set the maximum width of the image */
+            height: auto; /* Maintain aspect ratio */
+            display: flex;
+            float: left;
+            margin-top: 100px;
+        }
+        #description2{
+          margin-top: 200px;
+          padding-top: 230px;
+            text-align: left;
+            display: flex;
+            color: black;
+            padding-bottom: 70px;
+
+        }
+
+
+        #logo{
+            margin-top: 100px;
+            padding-left: 450px;
+            color: rgb(222, 166, 13);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #description4{
+            margin-top: 300px;
+            padding-left: 380px;
+            color: rgb(222, 166, 13);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+              
+.carousel-control-prev-icon.custom-carousel-icon,
+.carousel-control-next-icon.custom-carousel-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Optional: Make the icon circular */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon.custom-carousel-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"><path d="M11.5 1.5a.5.5 0 0 1 0 .707L6.707 7.5l4.793 4.793a.5.5 0 0 1-.707.707l-5.5-5.5a.5.5 0 0 1 0-.707l5.5-5.5a.5.5 0 0 1 .707 0z"/></svg>');
+}
+
+.carousel-control-next-icon.custom-carousel-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" viewBox="0 0 16 16"><path d="M4.5 1.5a.5.5 0 0 1 .707 0l5.5 5.5a.5.5 0 0 1 0 .707l-5.5 5.5a.5.5 0 0 1-.707-.707L9.293 8 4.5 3.207a.5.5 0 0 1 0-.707z"/></svg>');
+}
+
+
+       #press1{
+        padding-left: 0%;
+        padding-top: 0%;
+        margin-bottom: 100px;
+       }
+       
+    </style>
+
+</head>
+
+
+
+
+<body>
+    <div class="header">
+<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+        <a href="pricing.html" class="nav-link px-2 text-dark">Pricing</a>
+        <li><a href="about.html" class="nav-link px-2 text-dark">About</a></li>
+    </ul>
+    
+
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+    </form>
+
+   
+    <div class="text-end">
+        <button type="button" class="btn btn-outline-dark me-2" id="loginBtn">Login</button>
+        <button type="button" class="btn btn-warning" id="signUpBtn">Sign-up</button>
+    </div>
+    
+</div>
+</div>
+    <h1 id="logo">BUDGET HAPPY</h1>
+    <div>
+        <img src="./images/expense photo.png" alt="Your Image Description" class="custom-image">
+         <h2 id="Description">Collaborative finance in a smart calendar for Everyone</h2>
+     </div>
+    
+     <div>
+        <img src="./images/moneyPhoto2.png" alt="The second image description" class="money-photo2">
+        <h2 id="description2">See where your money goes and how your balance evolves over time</h2>
+        <p id="description3">Be smarter about money. With your balance calculated automatically for each day, month or year, understanding your current and projected financial situation is so easy you might even call it fun.</p>
+    </div>
+
+    <div class="container">
+    <h3 id="description4">YOUR FEEDBACK</h3>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/feedback1.png" class="d-block w-100" alt="feedback1">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/feedback2.png" class="d-block w-100" alt="feedback2">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/feedback3.png" class="d-block w-100" alt="feedback3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon custom-carousel-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon custom-carousel-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <div class="container" id="press1">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+          Press Here
+    </div>
+
+ 
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-body-secondary">© 2024</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("loginBtn").addEventListener("click", function() {
+                window.location.href = "login_page.html"; // Change "login_page.html" to the actual URL of your login page
+            });
+
+            document.getElementById("signUpBtn").addEventListener("click", function() {
+                window.location.href = "sign_up_page.html"; // Change "sign_up_page.html" to the actual URL of your sign-up page
+            });
+        });
+    </script>
+</body>
+</html>  
