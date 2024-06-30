@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+
+   <style>
+    .custom-font {
+      font-family: "Brush Script MT", cursive;
+      font-size: 2rem; /* Adjust this size as needed */
+    }
+
+    .btn-sm btn-outline-secondary{
+      background-color: #f8f9fa; /* Light color as per your example */
+      color: black;
+      border-color: #834a6c; 
+
+    }
+    #logo{
+      font-family: "Brush Script MT", cursive;
+      font-size: 3rem; /* Adjust this size as needed */
+      text-align: center;
+      margin-top: 80px;  
+      padding-left: 380px;
+      padding-right: 380px;
+    }
+    #description1{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        font-size: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+    #description2{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Adjust the spacing between buttons */
+      margin-top: 20px;
+    }
+    .btn-custom-primary {
+      background-color: #834a6c; /* Replace with your specific color if needed */
+      color: white;
+      border-color: #834a6c;
+    }
+    .btn-custom-secondary {
+      background-color: #f8f9fa; /* Light color as per your example */
+      color: black;
+      border-color: #834a6c;
+      
+    }
+    .btn-custom-signup {
+      background-color: #f8f9fa; /* Light color */
+      color: #834a6c;
+      border: 2px solid #834a6c;
+    }
+    
+    .content-container {
+      display: flex;
+    }
+    .content-container img {
+      max-width: 60%;
+      height: auto;
+      margin-top: 100px;
+    }
+    .content-container h4 {
+      margin-bottom: 10px; /* Reduce the space between the h4 and p */
+      margin-top: 220px; /* Remove the top margin */
+      padding-bottom: 50px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 0%;
+      padding-right: 50px;
+    }
+    .content-container p {
+      margin-top: 0; /* Remove the top margin */
+      padding-left: 0%;
+      padding-right: 50px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 20px;
+    }
+    .custom-margin-top {
+    margin-top: 20px; /* Adjust the value as needed */
+  }
+   
+  #sales{
+    max-width: 100%;
+      height: auto;
+  }
+  #promo {
+    display: block; /* Ensures the image behaves as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image does not exceed the container's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    width: 50%; /* Sets a suitable width for the image, adjust as necessary */
+    margin-top: 110px;
+  }
+ 
+  .centered-button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+
+  .btn-custom {
+    --bs-btn-bg: #834a6c; /* Custom background color */
+    --bs-btn-border-color: #834a6c; /* Custom border color */
+    --bs-btn-color: #fff; /* Custom text color */
+    --bs-btn-hover-bg: #834a6c; /* Custom hover background color */
+    --bs-btn-hover-border-color: #834a6c; /* Custom hover border color */
+    --bs-btn-padding-y: .75rem; /* Increased padding for a larger button */
+    --bs-btn-padding-x: 1.5rem; /* Increased padding for a larger button */
+    --bs-btn-font-size: 1.25rem; /* Increased font size */
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x); /* Apply the custom padding */
+    font-size: var(--bs-btn-font-size); /* Apply the custom font size */
+    background-color: var(--bs-btn-bg); /* Apply the custom background color */
+    border-color: var(--bs-btn-border-color); /* Apply the custom border color */
+    color: var(--bs-btn-color); /* Apply the custom text color */
+  }
+
+  .btn-custom:hover {
+    background-color: var(--bs-btn-hover-bg); /* Apply hover background color */
+    border-color: var(--bs-btn-hover-border-color); /* Apply hover border color */
+  }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <div class="container">
+        <header class="border-bottom lh-1 py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+              <a class="link-secondary" href="#">Subscribe</a>
+            </div>
+            <div class="col-4 text-center">
+              <a class="blog-header-logo text-body-emphasis text-decoration-none custom-font" href="#">For Your Socials</a>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <a class="link-secondary" href="#" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24">
+                  <title>Search</title>
+                  <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                  <path d="M21 21l-5.2-5.2"></path>
+                </svg>
+              </a>
+              <a class="btn btn-sm btn-custom-signup" href="signup.html">Sign up</a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="logo"> Social media management on a single platform</h1>
+  <h2 id="description1">View every social media account - and its content - on ONE dashboard.</h2>
+  <h4 id="description2">Leave comments, interact with posts, or directly engage with followers, without juggling dozens of disconnected applications.</h4>
+
+  <div class="button-container">
+    
+
+    <div class="centered-button-container">
+        <a class="btn-custom btn-lg" href="signup.html">Start now - It's free</a>
+      </div>
+    <button type="button" class="btn btn-custom-secondary btn-lg">Schedule a demo</button>
+  </div>
+
+  <div class="content-container mt-5">
+    <img src="./image/photo1.png" alt="Description of image">
+    <div>
+      <h4 id="description3">Plan, monitor, and analyze your accounts in one place</h4>
+      <p  id="description4">Being present on Social Media increases awareness, connects you with your customers, boosts leads, and income. It can also provide customer support and help broadcast important company news and messages.</p>
+    </div>
+  </div>
+
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary custom-margin-top">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic" style="margin-top: 50px;">What is a social media dashboard?</h1>
+      <p class="lead my-3">A social media dashboard is a centralized platform that consolidates performance metrics from various social networks like Facebook, Twitter, and YouTube. It provides insights into engagement, follower count, and audience demographics, enabling data-driven marketing decisions.</p>
+    </div>
+  </div>
+
+
+<img src="./image/photo(2).png" alt="sales" id="sales">
+</br>
+
+<img src="./image/photo3.png" alt="promo" id="promo">
+
+<div class="centered-button-container">
+    <button type="button" class="btn btn-primary btn-custom" href="signup.html">
+      Try Free Trial
+    </button>
+  </div>
+
+  </br>
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
